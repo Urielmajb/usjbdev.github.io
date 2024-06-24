@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USJB.dev</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <!-- iconos -->
+    <link href="assets/img/icon2.png" rel="icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fuente de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Lenguajes</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!-- About Me Section -->
+        <div id="about" class="section about-me">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="section-content">
+                <img src="assets/img/ejemplo.jpg" alt="Profile Picture" class="profile-pic">
+                <p>Apasionada de lo desconocido, me defino por ser una persona disciplinada con ganas de aprender,
+                    enseñar y orientar en las áreas multidisciplinarias.</p>
+            </div>
+        </div>
+
+        <!-- Programming Languages Section -->
+        <div id="skills" class="section programming-languages">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="progress">
+                        <div class="progress-bar html">95%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="progress">
+                        <div class="progress-bar css">95%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>PHP</span>
+                    <div class="progress">
+                        <div class="progress-bar php">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Javascript</span>
+                    <div class="progress">
+                        <div class="progress-bar javascript">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="progress">
+                        <div class="progress-bar python">75%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Wordpress</span>
+                    <div class="progress">
+                        <div class="progress-bar wordpress">95%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Projects Section -->
+
+        <!-- Projects Section -->
+    <div id="projects" class="section projects">
+    <h2 class="section-title">Proyectos</h2>
+    <div class="projects-filter">
+        <button class="filter-button active" data-filter="all">Todos</button>
+        <button class="filter-button" data-filter="design">Diseño</button>
+        <button class="filter-button" data-filter="development">Desarrollo</button>
+    </div>
+    <div class="projects-container">
+        <div class="project-item" data-category="development">
+            <img src="/assets/img/SistemaNomina.png" alt="Sistema Nomina">
+        </div>
+        <div class="project-item" data-category="design">
+            <img src="assets/img/DisenioLogin.png" alt="Login">
+        </div>
+        <div class="project-item" data-category="development">
+            <img src="assets/img/SistemaFilas1.png" alt="Tickets">
+        </div>
+        <div class="project-item" data-category="development">
+            <img src="assets/img/Telepromter1.png" alt="Teleprompter">
+        </div>
+    </div>
+</div>
+
+        <!-- Contact Form Section -->
+        <!-- Contact Me Section -->
+<div id="contact" class="section contact">
+    <h2 class="section-title">Contactame</h2>
+    <form class="contact-form">
+        <div class="form-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name" >Name</label>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email">E-mail</label>
+        </div>
+        <div class="form-group">
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Message</label>
+        </div>
+        <div class="form-group form-group-button">
+            <button type="submit" class="submit-button">Submit</button>
+        </div>    </form>
+</div>
+
+    </div>
+
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
