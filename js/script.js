@@ -45,6 +45,36 @@ document.addEventListener("DOMContentLoaded", function () {
     function redirectToMain() {
         window.location.href = "portafolio.html"; // 
     }
+
+    var backToTopButton = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const aboutSection = document.querySelector('#about-me');
+    const aboutTitle = aboutSection.querySelector('.section-title');
+    
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutTitle.classList.add('animate');
+                observer.disconnect();
+            }
+        });
+    });
+
+    observer.observe(aboutSection);
+
 });
 
 document.querySelector('.contact-form').addEventListener('submit', function (e) {
@@ -52,3 +82,4 @@ document.querySelector('.contact-form').addEventListener('submit', function (e) 
     // Aquí puedes agregar la funcionalidad de envío del formulario.
     alert('Form submitted!');
 });
+

@@ -23,7 +23,7 @@
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="menu">
-                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#about-me">Sobre mí</a></li>
                 <li><a href="#skills">Lenguajes</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#contact">Contacto</a></li>
@@ -33,12 +33,15 @@
 
     <div class="content">
         <!-- About Me Section -->
-        <div id="about" class="section about-me">
-            <h2 class="section-title">Sobre mí</h2>
-            <div class="section-content">
-                <img src="assets/img/ejemplo.jpg" alt="Profile Picture" class="profile-pic">
-                <p>Apasionada de lo desconocido, me defino por ser una persona disciplinada con ganas de aprender,
-                    enseñar y orientar en las áreas multidisciplinarias.</p>
+
+        <div id="about-me" class="section about-me">
+            <img src="assets/img/ejemplo.jpg" alt="Profile Image">
+            <div class="about-content">
+                <h2 class="section-title">¡Hola! Soy Urielma</h2>
+                    <p>Tu <strong>desarrolladora frontend de confianza</strong> y <strong>apasionada de lo desconocido</strong>. M Me defino por ser una persona disciplinada con un gran deseo de aprender, enseñar y orientar en diversas áreas multidisciplinarias.
+                    </p>
+                        <p>Disfruto del anime y leer mangas, así como de escuchar música a todas horas y jugar videojuegos. También me encanta hacer ejercicio y pasar tiempo de calidad con mi familia.</p>
+                        
             </div>
         </div>
 
@@ -85,59 +88,70 @@
             </div>
         </div>
 
+        
 
         <!-- Projects Section -->
 
         <!-- Projects Section -->
-    <div id="projects" class="section projects">
-    <h2 class="section-title">Proyectos</h2>
-    <div class="projects-filter">
-        <button class="filter-button active" data-filter="all">Todos</button>
-        <button class="filter-button" data-filter="design">Diseño</button>
-        <button class="filter-button" data-filter="development">Desarrollo</button>
-    </div>
-    <div class="projects-container">
-        <div class="project-item" data-category="development">
-            <img src="/assets/img/SistemaNomina.png" alt="Sistema Nomina">
+        <div id="projects" class="section projects">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-filter">
+                <button class="filter-button active" data-filter="all">Todos</button>
+                <button class="filter-button" data-filter="design">Diseño</button>
+                <button class="filter-button" data-filter="development">Desarrollo</button>
+            </div>
+            <div class="projects-container">
+                <div class="project-item" data-category="development">
+                    <img src="/assets/img/SistemaNomina.png" alt="Sistema Nomina">
+                </div>
+                <div class="project-item" data-category="design">
+                    <img src="assets/img/DisenioLogin.png" alt="Login">
+                </div>
+                <div class="project-item" data-category="development">
+                    <img src="assets/img/SistemaFilas1.png" alt="Tickets">
+                </div>
+                <div class="project-item" data-category="development">
+                    <img src="assets/img/Telepromter1.png" alt="Teleprompter">
+                </div>
+            </div>
         </div>
-        <div class="project-item" data-category="design">
-            <img src="assets/img/DisenioLogin.png" alt="Login">
-        </div>
-        <div class="project-item" data-category="development">
-            <img src="assets/img/SistemaFilas1.png" alt="Tickets">
-        </div>
-        <div class="project-item" data-category="development">
-            <img src="assets/img/Telepromter1.png" alt="Teleprompter">
-        </div>
-    </div>
-</div>
 
-        <!-- Contact Form Section -->
         <!-- Contact Me Section -->
-<div id="contact" class="section contact">
-    <h2 class="section-title">Contactame</h2>
-    <form class="contact-form">
-        <div class="form-group">
-            <input type="text" id="name" name="name" required>
-            <label for="name" >Name</label>
+        <div id="contact" class="section contact">
+            <h2 class="section-title">Contactame</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Nombre Completo</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <label for="message">Mensaje</label>
+                </div>
+                <div class="form-group form-group-button">
+                    <button type="submit" class="submit-button">Enviar</button>
+                </div>
+            </form>
         </div>
-        <div class="form-group">
-            <input type="email" id="email" name="email" required>
-            <label for="email">E-mail</label>
-        </div>
-        <div class="form-group">
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <label for="message">Message</label>
-        </div>
-        <div class="form-group form-group-button">
-            <button type="submit" class="submit-button">Submit</button>
-        </div>    </form>
-</div>
 
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p>&copy; 2024 | USJB.dev </p>
+            </div>
+        </footer>
+
+        <!-- Back to Top -->
+
+        <a href="#" class="back-to-top">👆🏻</i>
+        </a>
     </div>
 
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
