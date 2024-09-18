@@ -51,31 +51,32 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
     observer.observe(aboutSection);
+   // Funcionalidad del slider
+   const prevButton = document.querySelector('.slider-nav.prev');
+   const nextButton = document.querySelector('.slider-nav.next');
+   const container = document.querySelector('.projects-container');
+   const items = document.querySelectorAll('.article-wrapper');
+   let currentIndex = 0;
 
-    // Funcionalidad del slider
-    const prevButton = document.querySelector('.slider-nav.prev');
-    const nextButton = document.querySelector('.slider-nav.next');
-    const container = document.querySelector('.projects-container');
-    const items = document.querySelectorAll('.article-wrapper');
-    let currentIndex = 0;
+   function updateSlider() {
+       const itemWidth = items[0].offsetWidth + 20; // Ajusta el margen según sea necesario
+       const offset = -currentIndex * itemWidth;
+       container.style.transform = `translateX(${offset}px)`;
+   }
 
-    function updateSlider() {
-        const itemWidth = items[0].offsetWidth + 20; // Ajusta el margen según sea necesario
-        const offset = -currentIndex * itemWidth;
-        container.style.transform = `translateX(${offset}px)`;
-    }
+   prevButton.addEventListener('click', () => {
+       if (currentIndex > 0) {
+           currentIndex--;
+           updateSlider();
+       }
+   });
 
-    prevButton.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateSlider();
-        }
-    });
+   nextButton.addEventListener('click', () => {
+       if (currentIndex < items.length - 1) {
+           currentIndex++;
+           updateSlider();
+       }
+   });
 
-    nextButton.addEventListener('click', () => {
-        if (currentIndex < items.length - 1) {
-            currentIndex++;
-            updateSlider();
-        }
-    });
+
 });
