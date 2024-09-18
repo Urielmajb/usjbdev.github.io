@@ -442,7 +442,7 @@ header {
 }
 
 .progress-bar.git {
-  width: 90%;
+  width: 95%;
   background-color: green;
   /* Teal */
 }
