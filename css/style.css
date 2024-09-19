@@ -204,7 +204,8 @@ header {
   align-items: center;
   justify-content: center;
   text-align: left;
-  flex-wrap: wrap; /* Para hacerlo más responsive */
+  flex-wrap: wrap;
+  gap: 20px; /* Para hacerlo más responsive */
 }
 
 .about-me .profile-container {
@@ -249,18 +250,7 @@ header {
     transform: translateY(-5px);
   }
 }
-/* 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-} */
+
 
 .about-me .about-content {
   flex-basis: 60%; /* Ajustamos el contenido para ocupar más espacio */
