@@ -69,16 +69,17 @@ body {
 
 .social-icons a {
   margin: 0 10px;
-  color: white;
-  /* Black icons */
-  font-size: 24px;
-  transition: color 0.3s;
+  color: white; /* Color del texto */
+  font-size: 24px; /* Tamaño de fuente */
+  transition: color 0.3s; /* Transición para el efecto hover */
 }
 
 .social-icons a:hover {
-  color: #e83e8c;
-  /* Neon pink on hover */
+  color: #e83e8c; /* Color en hover */
 }
+
+
+
 
 /* Header styles */
 header {
@@ -189,7 +190,6 @@ header {
   cursor: pointer;
 }
 
-
 /* Portfolio Page Styles */
 .content {
   padding-top: 60px;
@@ -204,20 +204,52 @@ header {
   align-items: center;
   justify-content: center;
   text-align: left;
+  flex-wrap: wrap; /* Para hacerlo más responsive */
 }
 
 .about-me .profile-container {
-  flex-basis: 30%; /* Set the width of the image container */
-  text-align: center; /* Center the image horizontally */
+  flex-basis: 30%; /* Define el tamaño de la imagen */
+  text-align: center;
+  position: relative;
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
 }
 
 .about-me img {
   border-radius: 50%;
-  border: 3px solid var(--pink); /* Pink border with 5px thickness */
-  margin: 0 auto; /* Center the image horizontally */
-  animation: pulse 3s ease-in-out; /* Apply the pulse animation */
+  border: 3px solid var(--pink);
+  margin: 0 auto;
+  /* animation: pulse 3s ease-in-out; */
+  width: 200px; /* Asegurarse de que la imagen tenga un tamaño consistente */
+  height: 200px;
 }
 
+/* Status tag below the image */
+.status-tag {
+  position: relative;
+  top: 15px;
+  right: 10px; /* Espacio entre la imagen y el mensaje */
+  background-color: #e20e8d;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  animation: bounce 2s infinite;
+  white-space: nowrap;
+  display: inline-block; /* Asegurarse de que no ocupe todo el ancho */
+  margin-top: 10px; /* Espacio adicional debajo de la imagen */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+/* 
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -228,12 +260,11 @@ header {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .about-me .about-content {
-  flex-basis: 70%; /* Set the width of the content container */
+  flex-basis: 60%; /* Ajustamos el contenido para ocupar más espacio */
 }
-
 
 .about-me .section-title {
   font-size: 3rem;
@@ -243,8 +274,6 @@ header {
   letter-spacing: 2px;
   text-shadow: 2px 2px #333333;
 }
-
-
 
 .about-me p {
   font-size: 1.2rem;
@@ -286,8 +315,16 @@ header {
   .about-me p {
     font-size: 1rem;
   }
+
+  .status-tag {
+    position: static;
+    margin: 10px auto 0;
+    top: 0;
+    transform: none;
+  }
 }
 
+/* Typing effect for section title */
 .typing-demo {
   width: 22ch;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
@@ -299,13 +336,13 @@ header {
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
