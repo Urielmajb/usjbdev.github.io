@@ -69,17 +69,16 @@ body {
 
 .social-icons a {
   margin: 0 10px;
-  color: white; /* Color del texto */
-  font-size: 24px; /* Tamaño de fuente */
-  transition: color 0.3s; /* Transición para el efecto hover */
+  color: white;
+  /* Black icons */
+  font-size: 24px;
+  transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #e83e8c; /* Color en hover */
+  color: #e83e8c;
+  /* Neon pink on hover */
 }
-
-
-
 
 /* Header styles */
 header {
@@ -190,6 +189,7 @@ header {
   cursor: pointer;
 }
 
+
 /* Portfolio Page Styles */
 .content {
   padding-top: 60px;
@@ -204,57 +204,36 @@ header {
   align-items: center;
   justify-content: center;
   text-align: left;
-  flex-wrap: wrap;
-  gap: 20px; /* Para hacerlo más responsive */
 }
 
 .about-me .profile-container {
-  flex-basis: 30%; /* Define el tamaño de la imagen */
-  text-align: center;
-  position: relative;
-  margin-right: 20px; /* Espacio entre la imagen y el texto */
+  flex-basis: 30%; /* Set the width of the image container */
+  text-align: center; /* Center the image horizontally */
 }
 
 .about-me img {
   border-radius: 50%;
-  border: 3px solid var(--pink);
-  margin: 0 auto;
-  /* animation: pulse 3s ease-in-out; */
-  width: 200px; /* Asegurarse de que la imagen tenga un tamaño consistente */
-  height: 200px;
+  border: 3px solid var(--pink); /* Pink border with 5px thickness */
+  margin: 0 auto; /* Center the image horizontally */
+  animation: pulse 3s ease-in-out; /* Apply the pulse animation */
 }
 
-/* Status tag below the image */
-.status-tag {
-  position: relative;
-  top: 15px;
-  right: 10px; /* Espacio entre la imagen y el mensaje */
-  background-color: #e20e8d;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  animation: bounce 2s infinite;
-  white-space: nowrap;
-  display: inline-block; /* Asegurarse de que no ocupe todo el ancho */
-  margin-top: 10px; /* Espacio adicional debajo de la imagen */
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
   50% {
-    transform: translateY(-5px);
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
-
 .about-me .about-content {
-  flex-basis: 60%; /* Ajustamos el contenido para ocupar más espacio */
+  flex-basis: 70%; /* Set the width of the content container */
 }
+
 
 .about-me .section-title {
   font-size: 3rem;
@@ -264,6 +243,8 @@ header {
   letter-spacing: 2px;
   text-shadow: 2px 2px #333333;
 }
+
+
 
 .about-me p {
   font-size: 1.2rem;
@@ -327,6 +308,7 @@ header {
     border-color: transparent
   }
 }
+
 
 .section {
   padding: 20px;
