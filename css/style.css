@@ -196,14 +196,11 @@ header {
 }
 
 /* Sobre mí Section */
-.about-me {
-  background-color: #0A0A0A;
-  padding: 60px 20px;
-  color: #EAEAEA;
+.about-content {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
+  flex-direction: column;
+  align-items: center; /* Centrar el contenido */
+  text-align: center; /* Centrar el texto */
 }
 
 .about-me .profile-container {
@@ -289,23 +286,28 @@ header {
 }
 
 .typing-demo {
-  width: 22ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
+  width: auto; /* Asegúrate de que el ancho sea automático */
+  animation: typing 3s steps(22) forwards, blink .5s step-end infinite alternate;
+  white-space: nowrap; /* No permite que el texto se rompa en varias líneas */
+  overflow: hidden; /* Oculta el texto que no está animado */
+  border-right: 3px solid; /* Agrega un cursor tipo typing */
   font-size: 2em;
 }
 
+/* Ajuste del keyframe para el efecto typing */
+/* Ajuste del keyframe para el efecto typing */
 @keyframes typing {
   from {
-    width: 0
+    width: 0; /* Comienza desde 0 */
+  }
+  to {
+    width: 17.5ch; /* Cambia esto al número de caracteres de tu texto */
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent; /* Parpadeo del cursor */
   }
 }
 
@@ -319,10 +321,12 @@ header {
 }
 
 .section-title {
-  font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #e20e8d;
-  /* Neon pink */
+  font-family: var(--font-family-courier);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #333333;
+  text-align: center; /* Asegúrate de que esté centrado */
 }
 
 .section-content {
