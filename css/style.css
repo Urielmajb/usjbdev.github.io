@@ -37,7 +37,7 @@ body {
   font-optical-sizing: auto;
   background-color: black;
   color: #ffffff;
-  cursor: url("/assets/img/kuromi.cur");
+  /*cursor: url("/assets/img/tl.png") auto;*/
 }
 
 /* Loading Page Styles */
